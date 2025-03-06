@@ -4,7 +4,7 @@ export const Head = () =>{
 
     return(
         <>
-        <img src="horse.jpeg" alt="" srcset="" style={{width:"100%", height:"500px"}}/>
+        <img src="oktatas-01.jpg" alt="" srcset="" style={{width:"100%", height:"400px"}}/>
         </>
     )
 }
