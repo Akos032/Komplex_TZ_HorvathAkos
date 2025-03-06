@@ -21,8 +21,7 @@ const NavBar = (() => {
             </div>
             <ul className={menuOpen ? "open" : ""}>
             <li>
-                <NavLink to = "/egyik">Egyik</NavLink>
-                <NavLink to = "/masik">Másik</NavLink>
+                <NavLink to = "/uj">Uj</NavLink>
             </li>
 
             </ul>
