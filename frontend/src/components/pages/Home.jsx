@@ -7,6 +7,7 @@ export const Home = () => {
     const [adatok, setAdatok] = useState([]);
     const[showTable, setShowTable] = useState(false);
     const[selectadatok,setSelectAdatok] = useState('');
+    const [ toggle, setToggle] = useState(false);
     useEffect(() => {
         axios.get(`http://localhost:3001/adatok`)
         .then(data => setAdatok(data.data))
@@ -50,7 +51,10 @@ export const Home = () => {
                         ))}
                     </select>
                 <br />
-                <button type="sumbit" style={{margin:"5px"}}>Adatok</button>
+                <button type="sumbit" onClick={() => setToggle(!toggle)} style={{margin:"5px"}}>Adatok</button>
+                {toggle && (
+                
+                )}
             </div>
             <div className="col-md-6"></div>
         </div>
